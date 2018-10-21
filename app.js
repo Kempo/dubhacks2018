@@ -20,9 +20,11 @@ const express = require('express');
 
 const app = express();
 
+app.use(express.static('public'));
 app.get('/', (req, res) => {
-  res.status(200).send('Hello, world!').end();
+     res.sendFile( __dirname + "/" + "index.html" );
 });
+
 
 // Start the server
 const PORT = process.env.PORT || 8080;
