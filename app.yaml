@@ -13,4 +13,10 @@
 
 # [START gae_quickstart_yaml]
 runtime: nodejs8
+handlers:
+- url: /
+  static_files: memory-app/dist/memory-app/index.html
+  upload: memory-app/dist/memory-app/index.html
+- url: /
+  static_dir: memory-app/dist/memory-app
 # [END gae_quickstart_yaml]
