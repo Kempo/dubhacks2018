@@ -1,0 +1,150 @@
+<div id="body">
+	<div id="name">{{ personData.firstname }} {{ personData.lastname }}</div>
+	<div id="address">{{ personData.address }} <span id="city" style="margin-left:1%">{{ personData.city }}</span></div>
+
+	<div id="main-buttons">
+		<div id="plus-button" class="button">
+			<button (click)="addEntry()">
+				<img src="assets/images/plus-circle.svg">
+			</button>
+		</div>
+		<div class="button" id="text-action">
+			<button class="main-action" (click)="togglePopup('calmPopup')"> Calm </button><br>
+			<button class="main-action" (click)="togglePopup('toDoPopup')"> To Do </button>
+		</div>
+		<div class="calmpop popuptext hide" id="calmPopup">
+			<div id="close-task-button" class="button">
+				<button (click)="togglePopup('calmPopup')">
+					<img src="assets/images/x.svg">
+				</button>
+			</div>
+			<div class="calm-button"><button (click)="playSound('richard_goldsworthy.mp3')">Music</button></div>
+			<!-- HOW TO GRAB TEL # FROM DATA??? from {{personData.contactnum}}-->
+			<div class="calm-button"><a href ="tel:+19712202458" class="button-link">Call a friend</a></div>
+			<div class="calm-info">
+				<b>Name:</b> {{ personData.firstname }}<br><br>
+				<b>Phone:</b> {{ personData.phone }}<br><br>
+				<b>Emergency Contact:</b> {{ personData.contact }}
+			</div>
+		</div>
+		<div class="todopop popuptext hide" id="toDoPopup">
+			<div id="close-task-button" class="button">
+				<button (click)="togglePopup('toDoPopup')">
+					<img src="assets/images/x.svg">
+				</button>
+			</div>
+			<div id="task-button" class="button">
+				<button (click)="addTask()">
+					<img src="assets/images/plus-circle.svg">
+				</button>
+			</div>
+			<ul class="tasks">
+				<li *ngFor="let task of tasks">
+					<div class="task" (click)="toggleTask(task)">
+						{{ task.txt }}
+						<span *ngIf="task.done; else nd">
+							<span><img src="assets/images/check.svg"></span>
+						</span>
+						<ng-template #nd>
+							<span><img src="assets/images/circle.svg"></span>
+						</ng-template>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="sort-buttons">
+		<span id="recent" ngClass="{{tab=='recent' && 'focus-button' || '' }}">
+			<button (click)="setTab('recent')">Recent</button>
+		</span>
+		<span id="important" ngClass="{{tab=='important' && 'focus-button' || '' }}">
+			<button (click)="setTab('important')">Important</button>
+		</span>
+		<span id="search" ngClass="{{tab=='search' && 'focus-button' || '' }}">
+			<button (click)="setTab('search')">Search</button>
+		</span>
+	</div>
+	
+	<div *ngIf="tab=='recent'">
+		<ul class="entries">
+			<li *ngFor="let entry of entries">
+				<div class="note">
+					<span *ngIf="entry.important; else unimp">
+						<div class="note-text important-note">{{ entry.note }}</div>
+					</span>
+					<ng-template #unimp>
+						<div class="note-text">{{ entry.note }}</div>
+					</ng-template>
+					<div class="note-time">{{ entry.time }}</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	
+	<div *ngIf="tab=='important'">
+		<ul class="entries">
+			<li *ngFor="let entry of entries">
+				<div class="note" *ngIf="entry.important">
+					<span>
+						<div class="note-text important-note">{{ entry.note }}</div>
+						<div class="note-time">{{ entry.time }}</div>
+					</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div *ngIf="tab=='search'">
+		<div class="search">
+			<input type="text" placeholder="Search (ex: 'backpack')">
+		</div>
+		<div *ngIf="entries[0] != null">
+			<div class="right-round">
+				Most recent log
+			</div>
+			<ul class="entries">
+				<li>
+					<div class="note">
+						
+						<span *ngIf="entries[0].important; else unimp">
+							<div class="note-text important-note">{{ entries[0].note }}</div>
+						</span>
+						<ng-template #unimp>
+							<div class="note-text">{{ entries[0].note }}</div>
+						</ng-template>
+						<div class="note-time">{{ entries[0].time }}</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="right-round">
+			Top three locations
+		</div>
+		
+		<ul class="entries">
+			<li>
+				<div class="location">
+					<span>
+						<div class="note-text">Bed</div>
+					</span>
+				</div>
+			</li>
+			<li>
+				<div class="location">
+					<span>
+						<div class="note-text">Car trunk</div>
+					</span>
+				</div>
+			</li>
+			<li>
+				<div class="location">
+					<span>
+						<div class="note-text">Under desk</div>
+					</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>

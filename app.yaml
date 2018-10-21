@@ -15,8 +15,8 @@
 runtime: nodejs8
 handlers:
 - url: /
-  static_files: memory-app/dist/memory-app/index.html
-  upload: memory-app/dist/memory-app/index.html
+  static_files: dist/memory-app/index.html
+  upload: dist/memory-app/index.html
 - url: /
-  static_dir: memory-app/dist/memory-app
+  static_dir: dist/memory-app
 # [END gae_quickstart_yaml]

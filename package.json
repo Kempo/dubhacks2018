@@ -1,44 +1,50 @@
 {
-  "name": "appengine-hello-world",
-  "description": "Simple Hello World Node.js sample for Google App Engine Standard Environment.",
-  "version": "0.0.1",
-  "private": true,
-  "license": "Apache-2.0",
-  "author": "Google Inc.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Kempo/dubhacks2018.git"
-  },
-  "engines": {
-    "node": ">=8"
-  },
+  "name": "memory-app",
+  "version": "0.0.0",
   "scripts": {
-    "deploy": "gcloud app deploy",
-    "start": "node app.js",
-    "lint": "repo-tools lint",
-    "pretest": "npm run lint",
-    "system-test": "repo-tools test app",
-    "test": "npm run system-test",
-    "e2e-test": "repo-tools test deploy"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
+  "private": true,
   "dependencies": {
-    "@google-cloud/speech": "^2.1.1",
-    "express": "^4.16.3",
-    "googleapis": "^34.0.0",
-    "mysql": "^2.16.0",
-    "watson-developer-cloud": "^3.12.0"
+    "@angular/animations": "^6.1.0",
+    "@angular/cdk": "^7.0.0",
+    "@angular/common": "^6.1.0",
+    "@angular/compiler": "^6.1.0",
+    "@angular/core": "^6.1.0",
+    "@angular/forms": "^6.1.0",
+    "@angular/http": "^6.1.0",
+    "@angular/material": "^7.0.0",
+    "@angular/platform-browser": "^6.1.0",
+    "@angular/platform-browser-dynamic": "^6.1.0",
+    "@angular/router": "^6.1.0",
+    "core-js": "^2.5.4",
+    "rxjs": "^6.0.0",
+    "zone.js": "~0.8.26"
   },
   "devDependencies": {
-    "@google-cloud/nodejs-repo-tools": "^2.3.0",
-    "semistandard": "^12.0.1"
-  },
-  "cloud-repo-tools": {
-    "test": {
-      "app": {
-        "msg": "Hello, world!"
-      }
-    },
-    "requiresKeyFile": true,
-    "requiresProjectId": true
+    "@angular-devkit/build-angular": "~0.7.0",
+    "@angular/cli": "~6.1.2",
+    "@angular/compiler-cli": "^6.1.0",
+    "@angular/language-service": "^6.1.0",
+    "@types/jasmine": "~2.8.6",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
+    "codelyzer": "~4.2.1",
+    "jasmine-core": "~2.99.1",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~1.7.1",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "~2.0.0",
+    "karma-jasmine": "~1.1.1",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "protractor": "^5.4.1",
+    "ts-node": "~5.0.1",
+    "tslint": "~5.9.1",
+    "typescript": "~2.7.2"
   }
 }
