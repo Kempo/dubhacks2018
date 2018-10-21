@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "dubhacks-2018-memory-project",
+  "private_key_id": "ddc19aec603fd9ffa76b1102062118eb822fd979",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC0QHlnxZhkQHkF\njeVnOF4j3haBJspYQADPV6U7sjWUI7iUgwWrpwhKH2aS2dOEZnOcqGfCo44He94J\nqT0Uk7dVmFShQgXzbyKOpHqzwtOGr1TpIyUCpWqhzT36VXFGRuDzhA4/rx9hk3Ip\nE+jWm3KljCRRwKYyeV4hum4EuunYVDnxemGwgWO96okNClLSKP1QKm7vEEobjZnV\noH4AEjfn7nsPAaS/LkGGdD5o1LZ+ZSh+6r3+veVnc9kNAYR0CDo/c4GzFQvoNcvz\ngrqlN2lNV7bUe/KJMATqEDG8Cqm/JGylRXOINYkeLPA0nDM/uNaeYjbMTB+FlLPO\n5Cd2Psv3AgMBAAECggEAEekWJymLKur9G4At+0OulwHKWqrwEDTL385lrLjYeg/S\nl28tcRD30eWs24qpac6ETlytcrmtszCrr2oRl6nV3bt1LVDSJo40cNgHGTWSrx9c\n4I2Nb+Xf4pPyRJ2Y09LXJ1tHzywnghqUjWBdEnX/vlNeiIEMApfsso1DwVSRR91r\ncRNxrnDbaliuzgU7UdSVgIkdkJ5Dp8zM5qDB2+B3GdXZ0Rj4CUkG8FxxIWym7mDS\nvZFF6PNV4L7BridFcyCy0ODMlQ+Eqs4rNAaTUTwxJY5c1Y9MR8toLbFPxRQheGTC\npQL8G9Q1BoKkljUYYutxmorsShP7q2RNBsufMArogQKBgQD6uW9jpkrqYFADe842\nmCyicphrsZ6sz4aTtt0P41UowsGH8J01BhVJqFilDwQWCL87RzLiD5OGaLGP7QYg\nyBy1f4IMEdxDtKYPbFfPtsHDZA1Q6FfZpKbnvgsGRMLi91a1Q690DNWFtgik50uG\nv1W8tV3dhsf0E4Xf1MWNM74mnQKBgQC4C22iwwltmnRsJOOvIhZ8ADgkMagrNf6p\nhgKf71wTxbBD/FE1I1sA7vUr/XCxAjzXRCPovb2Z9cVV04WgRmkVWymKJ/rCIneZ\nN9g7Iq9r+anpOknDsywGK6WppGodFs/MYf5d4KFlG7tx854YX4dnq4Mi+0jRhi/V\nbYOim2wuowKBgEy6YvRD97kyMEpgoQLkHwS3vR14Be8ssyqRU6WBFJacw00uvW10\npx8bfcVFiyKTGrKxX0j/K05+y5gYGT/+/Yots0auUJIHvqoJpfXTIAkDnW+dKwVX\n9hwFdKo+cMW0m7xtMkx5gP6ibpLIlbxu4XYWqtsYXCi9sMKHAs3rf82hAoGBAKUH\nqmG+Xd/oFek7EubhvCOo1q6t0Ewe+KHuRsA/E+Ou6qWrxO3PLDUkELhHZBt1FDU7\nJq/2I+PAXBjfuPzE5kl+GzuFKfeWjIPZbY1pRr+dedxmpepT6XAHB1+czIIVCHQO\nktZ/LHnLakN93g+g6XvucYKWrO8kUhQhRV4z28fdAoGAZ0O6wQYVajtU+eASjw9L\nQUc6dNhKOMtCuQdcfLsWmkzPPr/i3WsmlZ2VagBodmEu0LJoxjyVi/85IOl1kmGE\nP59hJ9zVO0bW1jdCfxvqZj4iObHi1OMNBGfyCdriqLB7HuzIJZRIH+3m7xuZXRPo\nsHLJ3bKr8kRyfiM2AZaNs9Q=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dubhacks-memory-project@dubhacks-2018-memory-project.iam.gserviceaccount.com",
+  "client_id": "115707994725105577791",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dubhacks-memory-project%40dubhacks-2018-memory-project.iam.gserviceaccount.com"
+}

@@ -1,0 +1,1 @@
+curl -X POST -u "3e68f27d-60da-473a-9c3a-2418c1c9f3f7":"oywycE2PayOW" -H "Content-Type: application/json" -d '{  "text": "I left my glasses in the nightstand.",  "features": {    "semantic_roles": {},    "keywords": {}  }}' "https://gateway.watsonplatform.net/natural-language-understanding/api/v1/analyze?version=2018-03-19"
